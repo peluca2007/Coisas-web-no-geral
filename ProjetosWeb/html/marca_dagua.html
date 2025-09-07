@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo com Marca d'Água</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* Marca d'água */
+    body::before {
+      content: "CONFIDENCIAL";
+      position: fixed; /* Fixa na tela */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-30deg);
+      font-size: 5rem;
+      color: rgba(0, 0, 0, 0.1); /* Transparência */
+      white-space: nowrap;
+      z-index: 9999;
+      pointer-events: none; /* Não atrapalha cliques */
+    }
+
+    .conteudo {
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <section class="conteudo">
+    <h1>Exemplo de Página</h1>
+    <p>
+      Este é um exemplo simples de como adicionar uma marca d'água em HTML
+      usando apenas CSS. O texto "CONFIDENCIAL" está fixo e transparente
+      no fundo da página.
+    </p>
+</section>
+</body>
+</html>
