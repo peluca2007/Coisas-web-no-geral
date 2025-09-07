@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="lembreaqui.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <main class="container">
+        <form>
+            <h1>Login Lembreaki</h1>
+
+            <div class="input-container">
+                <label for="usuario" class="sr-only">Usuário</label>
+                <input placeholder="Usuário" type="email" id="usuario" required>
+                <i class="bx bxs-user"></i>
+            </div>
+
+            <div class="input-container">
+                <label for="senha" class="sr-only">Senha</label>
+                <input placeholder="Senha" type="password" id="senha" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            <div class="remember">
+                <label for="lembrar">
+                    <input type="checkbox" id="lembrar" name="lembrar" value="lembrar">
+                    Lembrar minha senha
+                </label>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+
+            <button type="submit">Login</button>
+
+            <div class="register">
+                <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

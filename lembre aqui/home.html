@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Lembreaki</title>
+  <link rel="stylesheet" href="lembreaqui.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <button id="openModal">Adicionar Lembrete</button>
+  </div>
+
+  <!-- Contêiner para os lembretes -->
+  <div id="lembretesContainer" class="lembretes-container"></div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Adicionar Lembrete</h2>
+      <div class="input-container">
+        <input type="text" id="titulo" placeholder="Título">
+      </div>
+      <div class="input-container">
+        <input type="text" id="descricao" placeholder="Descrição">
+      </div>
+      <div class="input-container">
+        <input type="date" id="data" placeholder="Data (Opcional)">
+      </div>
+      <div class="input-container">
+        <input type="text" id="hora" placeholder="Hora (Opcional)">
+      </div>
+      <button id="saveLembrete">Salvar</button>
+      <button id="closeModal">Cancelar</button>
+    </div>
+  </div>
+
+  <!-- Modal de visualização -->
+  <div id="viewModal" class="view-modal hidden">
+    <div class="view-modal-content">
+      <h3 id="viewTitulo"></h3>
+      <p id="viewDescricao"></p>
+      <p><strong>Data:</strong> <span id="viewData"></span></p>
+      <p><strong>Hora:</strong> <span id="viewHora"></span></p>
+      <button id="closeViewModal">Fechar</button>
+    </div>
+  </div>
+
+  <script src="lembreaqui.js"></script>
+</body>
+</html>
